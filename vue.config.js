@@ -8,4 +8,8 @@ module.exports = defineConfig({
       },
     },
   },
+  devServer: {
+    port: 4200, // Đặt cổng chạy cho frontend là 4200
+    proxy: "http://localhost:8080", // Chỉ định backend (nếu cần)
+  },
 });

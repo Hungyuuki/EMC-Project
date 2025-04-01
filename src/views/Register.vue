@@ -52,7 +52,7 @@ export default {
         alert("Đăng ký thành công");
         this.$router.push("/login");
       } catch (error) {
-        alert("Đăng ký thât bại");
+        alert("Đăng ký thất bại");
         console.error("Đăng ký thất bại", error);
       }
     },
