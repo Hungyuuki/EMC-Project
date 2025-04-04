@@ -11,7 +11,7 @@ export const register = async (userData) => {
     throw error;
   }
 };
-//  Tương tự signin
+//  Tương tự login
 export const login = async (credentials) => {
   return axios.post(`${API_URL}/login`, credentials);
 };

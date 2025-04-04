@@ -14,12 +14,17 @@
         required
       />
       <button type="submit">Đăng nhập</button>
+      <p class="mt-3">
+        Bạn chưa có tài khoản?
+        <router-link to="/register">Đăng ký tại đây</router-link>
+      </p>
     </form>
   </div>
 </template>
 
 <script>
 import { login } from "@/services/authService";
+// import { RouterLink } from "vue-router";
 
 export default {
   name: "LoginPage", // Sửa thành tên nhiều từ

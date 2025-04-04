@@ -7,23 +7,23 @@
         <b-navbar-nav>
           <b-nav-item to="/homePage">Trang chủ</b-nav-item>
           <b-nav-item to="/register">Đăng ký</b-nav-item>
+          <b-nav-item to="/login">Đăng nhập</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
 
     <b-container>
+      <!-- <HelloWorld /> -->
       <router-view />
     </b-container>
   </div>
 </template>
 <script>
+// import HelloWorld from "./components/HelloWorld.vue";
+
 // export default {
-//   methods: {
-//     goToHomePage() {
-//       if (this.$route.path !== "/homePage") {
-//         this.$router.push("/homePage");
-//       }
-//     },
+//   components: {
+//     HelloWorld,
 //   },
 // };
 </script>

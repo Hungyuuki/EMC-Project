@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
+import HelloWorld from "../components/HelloWorld.vue";
 
 Vue.use(VueRouter); // Sử dụng Vue Router
 
@@ -21,12 +22,14 @@ const routes = [
   {
     path: "/register",
     component: Register,
+    name: Register,
     meta: { layout: "empty" }, // Không hiển thị App.vue
   },
+  { path: "/helloWorld", component: HelloWorld, meta: { layout: "empty" } }, //trang 404 :v
 ];
 
 const router = new VueRouter({
-  mode: "history", // Sử dụng history mode thay vì createWebHistory()
+  mode: "history",
   routes,
 });
 

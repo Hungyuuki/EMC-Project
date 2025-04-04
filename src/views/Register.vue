@@ -42,6 +42,7 @@ export default {
         username: "",
         email: "",
         password: "",
+        role: "CUSTOMER",
       },
     };
   },
