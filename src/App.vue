@@ -8,6 +8,7 @@
           <b-nav-item to="/homePage">Trang chủ</b-nav-item>
           <b-nav-item to="/register">Đăng ký</b-nav-item>
           <b-nav-item to="/login">Đăng nhập</b-nav-item>
+          <b-nav-item to="/products">Danh sách sản phẩm</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

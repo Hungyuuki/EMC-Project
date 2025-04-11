@@ -5,6 +5,7 @@ import HomePage from "../views/HomePage.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import HelloWorld from "../components/HelloWorld.vue";
+import ListProduct from "../views/List-Product.vue";
 
 Vue.use(VueRouter); // Sử dụng Vue Router
 
@@ -22,10 +23,16 @@ const routes = [
   {
     path: "/register",
     component: Register,
-    name: Register,
+    name: "Register",
     meta: { layout: "empty" }, // Không hiển thị App.vue
   },
   { path: "/helloWorld", component: HelloWorld, meta: { layout: "empty" } }, //trang 404 :v
+  {
+    path: "/products",
+    component: ListProduct,
+    name: "ListProduct",
+    meta: { layout: "empty" },
+  },
 ];
 
 const router = new VueRouter({
